@@ -50,6 +50,7 @@ body{
     font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    cursor: url('https://image.pngaaa.com/132/49132-middle.png'), url('path-to-image-2.svg'), url('path-to-image-3.jpeg'), auto;
 }
 
 header{
