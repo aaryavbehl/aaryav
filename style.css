@@ -804,7 +804,7 @@ button {
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: #ff0000;
+    color: #ffffff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
@@ -835,7 +835,7 @@ button {
     top: 7%;
     left: 0%;
     opacity: 0;
-    background: #28f100;
+    background: #000000;
     -webkit-transform: skewX(-20deg);
     -moz-transform: skewX(-20deg);
     -ms-transform: skewX(-20deg);
@@ -865,7 +865,7 @@ button {
   appearance: none;
   border: none;
   background: none;
-  color: #ff00a6;
+  color: #000000;
   cursor: pointer;
   position: relative;
   padding: 8px;
@@ -884,7 +884,7 @@ button {
   right: 0;
   left: 0;
   height: calc(50% - 5px);
-  border: 1px solid #ffff00;
+  border: 1px solid #cfe9fc;
   transition: all .15s ease;
 }
 
