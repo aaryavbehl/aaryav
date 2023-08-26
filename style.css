@@ -344,7 +344,7 @@ section{
     flex: 2;
     display: flex;
     justify-content: right;
-    
+    position: relative;
 }
 
 .img-box img{
