@@ -219,15 +219,22 @@ section{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 150px;
     height: 100%;
+    background: var(--hover-color);
     color: var(--bg-color);
+    font-size: 1rem;
     letter-spacing: 1px;
+    font-weight: 600;
     transition: .6s;
     box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
     position: relative;overflow: hidden;
+    z-index: 1;
     border: 2px solid var(--hover-color);
     --width: 150px;
   --timing: 2s;
+  border: 0;
   width: var(--width);
   padding-block: 1em;
   color: #fff;
@@ -880,6 +887,7 @@ button {
       left: 100%;
     }
   }
+
 
   
   
