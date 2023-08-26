@@ -801,7 +801,8 @@ section{
     color: var(--secon-bg-color);
 }
 
-.btn-2 {
+
+button {
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
@@ -819,7 +820,7 @@ section{
     transition: all 0.2s ease-in;
   }
   
-  .btn-2:hover {
+  button:hover {
     background: rgb(61, 106, 255);
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
     -webkit-transition: all 0.2s ease-out;
@@ -827,13 +828,13 @@ section{
     transition: all 0.2s ease-out;
   }
   
-  .btn-2:hover::before {
+  button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
   }
   
-  .btn-2::before {
+  button::before {
     content: '';
     display: block;
     width: 0px;
@@ -873,6 +874,7 @@ section{
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
+  
   
 
 /*contact-------------------------------------------------------------------------*/
