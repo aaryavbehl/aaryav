@@ -957,7 +957,7 @@ button {
   bottom: -1px;
   left: -8px;
   width: 0;
-  background-color: #ff4655;
+  background-color: #ffffff;
   transform: skew(-15deg);
   transition: all .2s ease;
 }
