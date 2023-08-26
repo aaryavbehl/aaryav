@@ -339,45 +339,47 @@ section{
     position: relative;
 }
 
-.img-box{
+.img-box {
+    position: relative; /* Added for positioning pseudo-elements */
     text-align: center;
     flex: 2;
     display: flex;
     justify-content: right;
+    overflow: hidden; /* Hide overflowing steam effect */
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
 }
 
-.img-box img{
+.img-box img {
     width: 100%;
-    max-width: 425px;
+    max-width: 100%;
     height: auto;
     border-radius: 50%;
-    }
+}
 
-    .img-box:before, .img-box:after {
-        content: '';
-        position: absolute;
-        left: -2px;
-        top: -2px;
-        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-            #0000ff, #00ff00,#ffff00, #ff0000);
-        background-size: 400%;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        z-index: -1;
-        animation: steam 20s linear infinite;
+.img-box:before,
+.img-box:after {
+    content: '';
+    position: absolute;
+    left: -4px; /* Adjust to match the size of the steam effect */
+    top: -4px; /* Adjust to match the size of the steam effect */
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 8px); /* Adjust to match the size of the steam effect */
+    height: calc(100% + 8px); /* Adjust to match the size of the steam effect */
+    z-index: -1;
+    border-radius: 50%; /* Match the border-radius of the image */
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0% 0%;
     }
-    
-    @keyframes steam {
-        0% {
-            background-position: 0 0;
-        }
-        50% {
-            background-position: 400% 0;
-        }
-        100% {
-            background-position: 0 0;
-        }
+    100% {
+        background-position: 400% 0%;
     }
+}
     
 
 
