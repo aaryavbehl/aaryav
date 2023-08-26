@@ -351,9 +351,10 @@ section{
     max-width: 425px;
     height: auto;
     border-radius: 50%;
-    border: 5px solid rgb(119, 0, 255);
+    border: 5px solid linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
     }
-
+    
+   
 
 
 
