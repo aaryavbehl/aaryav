@@ -378,7 +378,7 @@ section{
     max-width: 425px;
     height: auto;
     border-radius: 50%;
-    border: 3px solid;
+    border: 2px solid;
     animation: rainbow-border 8s linear infinite;
 }
 /* ABOUT SECTION */
