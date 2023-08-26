@@ -232,32 +232,41 @@ section{
     position: relative;overflow: hidden;
     z-index: 1;
     border: 2px solid var(--hover-color);
-    --width: 150px;
-  --timing: 2s;
-  border: 0;
-  width: var(--width);
-  padding-block: 1em;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1em;
-  background: rgb(0, 0, 0);
-  transition: all 0.2s;
-  border-radius: 3px;
 }
 
 .btn:hover{
-  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
-  animation: var(--timing) linear dance6123 infinite;
-  transform: scale(1.1) translateY(-1px);
+    color: var(--hover-color);
 }
 
-@keyframes dance6123 {
-  to {
-    background-position: var(--width);
-  }
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg-color);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
 }
 
+.btn:hover::before{
+    width: 100%;
 
+}
+
+.btn:nth-child(2){
+    background: var(--bg-color);
+    color: var(--hover-color);
+}
+
+.btn:nth-child(2):hover{
+    color: var(--bg-color);
+}
+
+.btn:nth-child(2)::before{
+    background: var(--hover-color);
+}
 
 .social-icons{
     margin-top: 8rem;
@@ -804,7 +813,7 @@ button {
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: #ffffff;
+    color: #fff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
@@ -835,7 +844,8 @@ button {
     top: 7%;
     left: 0%;
     opacity: 0;
-    background: #000000;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
     -webkit-transform: skewX(-20deg);
     -moz-transform: skewX(-20deg);
     -ms-transform: skewX(-20deg);
@@ -858,126 +868,39 @@ button {
       left: 100%;
     }
   }
+  
+  button1:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
 
-  .button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  background: none;
-  color: #000000;
-  cursor: pointer;
-  position: relative;
-  padding: 8px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  transition: all .15s ease;
-}
-
-.button::before,
-.button::after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  height: calc(50% - 5px);
-  border: 1px solid #cfe9fc;
-  transition: all .15s ease;
-}
-
-.button::before {
-  top: 0;
-  border-bottom-width: 0;
-}
-
-.button::after {
-  bottom: 0;
-  border-top-width: 0;
-}
-
-.button:active,
-.button:focus {
-  outline: none;
-}
-
-.button:active::before,
-.button:active::after {
-  right: 3px;
-  left: 3px;
-}
-
-.button:active::before {
-  top: 3px;
-}
-
-.button:active::after {
-  bottom: 3px;
-}
-
-.button_lg {
-  position: relative;
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #0f1923;
-  overflow: hidden;
-  box-shadow: inset 0px 0px 0px 1px transparent;
-}
-
-.button_lg::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  background-color: #0f1923;
-}
-
-.button_lg::after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 4px;
-  height: 4px;
-  background-color: #0f1923;
-  transition: all .2s ease;
-}
-
-.button_sl {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: -1px;
-  left: -8px;
-  width: 0;
-  background-color: #ff4655;
-  transform: skew(-15deg);
-  transition: all .2s ease;
-}
-
-.button_text {
-  position: relative;
-}
-
-.button:hover {
-  color: #0f1923;
-}
-
-.button:hover .button_sl {
-  width: calc(100% + 15px);
-}
-
-.button:hover .button_lg::after {
-  background-color: #fff;
-}
-
+  button1 {
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: rgb(64, 192, 87);
+    transition: all 0.2s;
+    border-radius: 3px;
+  }
+  
+  button1:hover {
+    background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+  }
+  
+  @keyframes dance6123 {
+    to {
+      background-position: var(--width);
+    }
+  }
   
   
 
@@ -993,8 +916,6 @@ button {
     margin: 1rem auto;
     margin-bottom: 3rem;
 }
-
-
 
 .contact form input,
 .contact form textarea{
@@ -1022,8 +943,6 @@ button {
     font-size: 1rem;
 }
 
-
-
 /*footyer-------------------------------------------------------------------------*/
 footer{
     padding: 0.8rem 5%;
@@ -1045,127 +964,6 @@ footer a{
     border-radius: 5px;
 
 }
-
-
-
-.tan {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    background: none;
-    color: #0f1923;
-    cursor: pointer;
-    position: relative;
-    padding: 8px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    transition: all .15s ease;
-  }
-  
-  .tan::before,
-  .tan::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: calc(50% - 5px);
-    border: 1px solid #7D8082;
-    transition: all .15s ease;
-  }
-  
-  .tan::before {
-    top: 0;
-    border-bottom-width: 0;
-  }
-  
-  .tan::after {
-    bottom: 0;
-    border-top-width: 0;
-  }
-  
-  .tan:active,
-  .tan:focus {
-    outline: none;
-  }
-  
-  .tan:active::before,
-  .tan:active::after {
-    right: 3px;
-    left: 3px;
-  }
-  
-  .tan:active::before {
-    top: 3px;
-  }
-  
-  .tan:active::after {
-    bottom: 3px;
-  }
-  
-  .tan_lg {
-    position: relative;
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #0f1923;
-    overflow: hidden;
-    box-shadow: inset 0px 0px 0px 1px transparent;
-  }
-  
-  .tan_lg::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 2px;
-    background-color: #0f1923;
-  }
-  
-  .tan_lg::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 4px;
-    height: 4px;
-    background-color: #0f1923;
-    transition: all .2s ease;
-  }
-  
-  .tan_sl {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: -1px;
-    left: -8px;
-    width: 0;
-    background-color: #ff4655;
-    transform: skew(-15deg);
-    transition: all .2s ease;
-  }
-  
-  .tan_text {
-    position: relative;
-  }
-  
-  .tan:hover {
-    color: #0f1923;
-  }
-  
-  .tan:hover .tan_sl {
-    width: calc(100% + 15px);
-  }
-  
-  .tan:hover .tan_lg::after {
-    background-color: #fff;
-  }
 
 footer a i{
     font-size: 1rem;
@@ -1414,7 +1212,6 @@ footer a i{
       display: none;
     }
   }
-
 
   html, body{
     overflow-x: hidden;
