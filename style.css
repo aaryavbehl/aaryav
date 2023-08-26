@@ -351,9 +351,20 @@ section{
     max-width: 425px;
     height: auto;
     border-radius: 50%;
-    border-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082) 1;
-    
-}
+    border-image: steam 20s linear infinite;
+    }
+
+    @keyframes steam {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
 
 /* ABOUT SECTION */
 
