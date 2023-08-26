@@ -120,7 +120,7 @@ span{
 #menu-icon{
     font-size: 1.8rem;
     z-index: 10001;
-    cursor: url(cursor/curse.png), auto;
+    cursor: auto;
     margin-left: 200px;
     background: var(--hover-color);
     border-radius: 3px;
@@ -683,7 +683,7 @@ section{
     background: none;
     outline: none;
     border: none;
-    cursor: url(cursor/curse.png), auto;
+    cursor: auto;
     font-size: .85rem;
     font-weight: 600;
     letter-spacing: .4px;
@@ -815,7 +815,7 @@ section{
 }
 
 .formBtn .btn{
-    cursor: url(cursor/curse.png), auto;
+    cursor: auto;
     font-size: 1rem;
 }
 
@@ -1092,4 +1092,5 @@ footer a i{
   html, body{
     overflow-x: hidden;
     max-width: 100%;
+    cursor: auto;
   }
