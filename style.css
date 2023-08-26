@@ -351,19 +351,19 @@ section{
         border-color: red;
     }
     14% {
-        border-color: orange;
+        border-color: rgb(255, 0, 85);
     }
     28% {
-        border-color: yellow;
+        border-color: rgb(127, 0, 253);
     }
     42% {
-        border-color: green;
+        border-color: rgb(0, 242, 255);
     }
     57% {
-        border-color: blue;
+        border-color: rgb(238, 255, 0);
     }
     71% {
-        border-color: indigo;
+        border-color: rgb(0, 204, 255);
     }
     85% {
         border-color: violet;
