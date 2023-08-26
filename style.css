@@ -361,6 +361,8 @@ section{
         background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
             #0000ff, #00ff00,#ffff00, #ff0000);
         background-size: auto;
+        width: auto;
+        height: auto;
         z-index: -1;
         animation: steam 20s linear infinite;
     }
