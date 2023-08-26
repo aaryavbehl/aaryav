@@ -865,7 +865,7 @@ button {
   appearance: none;
   border: none;
   background: none;
-  color: #ffaa00;
+  color: #ff00a6;
   cursor: pointer;
   position: relative;
   padding: 8px;
@@ -884,7 +884,7 @@ button {
   right: 0;
   left: 0;
   height: calc(50% - 5px);
-
+  border: 1px solid #ffff00;
   transition: all .15s ease;
 }
 
@@ -957,7 +957,7 @@ button {
   bottom: -1px;
   left: -8px;
   width: 0;
-  background-color: #ffffff;
+  background-color: #ff4655;
   transform: skew(-15deg);
   transition: all .2s ease;
 }
