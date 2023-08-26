@@ -345,6 +345,7 @@ section{
     display: flex;
     justify-content: right;
     position: relative;
+	margin: auto auto 0;
 }
 
 .img-box img{
