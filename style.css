@@ -874,13 +874,15 @@ button {
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 45px;
   }
 
   button1 {
-    --width: 150px;
     --timing: 2s;
     border: 0;
-    width: var(--width);
     padding-block: 1em;
     color: #fff;
     font-weight: bold;
@@ -888,6 +890,14 @@ button {
     background: rgb(64, 192, 87);
     transition: all 0.2s;
     border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    letter-spacing: 1px;
+    position: relative;overflow: hidden;
+    z-index: 1;
   }
   
   button1:hover {
