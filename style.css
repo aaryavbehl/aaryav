@@ -339,35 +339,38 @@ section{
     position: relative;
 }
 
-.img-box{
+
+.img-box {
     text-align: center;
     flex: 2;
     display: flex;
     justify-content: right;
     position: relative;
-	margin: auto auto 0;
+    margin: auto auto 0;
+    border-radius: 50%;
+    overflow: hidden; /* Clip the steam effect outside the circle */
 }
 
-.img-box img{
+.img-box:before,
+.img-box:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+        #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+.img-box img {
     width: 100%;
     max-width: 425px;
     height: auto;
     border-radius: 50%;
-    
-}
-
-.img-box:before, .img-box:after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 20s linear infinite;
 }
 
 @keyframes steam {
