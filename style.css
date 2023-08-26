@@ -251,23 +251,6 @@ section{
   transform: scale(1.1) translateY(-1px);
 }
 
-.btn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--bg-color);
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    transition: .4s;
-}
-
-.btn:hover::before{
-    width: 100%;
-
-}
-
 @keyframes dance6123 {
   to {
     background-position: var(--width);
