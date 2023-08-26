@@ -50,7 +50,6 @@ body{
     font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    cursor: url(cursor/curse.png), auto;
 }
 
 header{
@@ -121,7 +120,7 @@ span{
 #menu-icon{
     font-size: 1.8rem;
     z-index: 10001;
-    : pointer;
+    cursor: url(cursor/curse.png), auto;
     margin-left: 200px;
     background: var(--hover-color);
     border-radius: 3px;
@@ -684,7 +683,7 @@ section{
     background: none;
     outline: none;
     border: none;
-    : pointer;
+    cursor: url(cursor/curse.png), auto;
     font-size: .85rem;
     font-weight: 600;
     letter-spacing: .4px;
@@ -816,6 +815,7 @@ section{
 }
 
 .formBtn .btn{
+    cursor: url(cursor/curse.png), auto;
     font-size: 1rem;
 }
 
