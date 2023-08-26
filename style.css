@@ -344,9 +344,7 @@ section{
     flex: 2;
     display: flex;
     justify-content: right;
-    position: relative;
-	margin: 300px auto 0;
-	background: linear-gradient(0deg, #000, #272727);
+    
 }
 
 .img-box img{
