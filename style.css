@@ -713,7 +713,7 @@ section{
 }
 
 .filter-buttons .button:hover{
-    color: var(--hover-color);
+    color: rgb(255, 0, 0);
 }
 
 .portfolio-gallery{
