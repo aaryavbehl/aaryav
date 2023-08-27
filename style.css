@@ -66,10 +66,7 @@ header{
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 .center {
   position: absolute;
@@ -104,10 +101,9 @@ header{
 
 .table .monitor-wrapper .monitor p {
   font-family: 'VT323', monospace;
-  font-size: 100px;
   position: relative;
-  display: inline-block;
-  animation: move 20s infinite linear;
+  display: inline;
+  animation: move 10s infinite linear;
   color: #EBB55F;
 }
 
@@ -116,7 +112,7 @@ header{
     left: 800px;
   }
   to {
-    left: -4800px;
+    left: -300px;
   }
 }
 
