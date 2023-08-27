@@ -221,7 +221,7 @@ section{
     align-items: center;
     width: 150px;
     height: 100%;
-    background: var(--hover-color);
+    background: red;
     color: var(--bg-color);
     font-size: 1rem;
     letter-spacing: 1px;
@@ -326,6 +326,14 @@ section{
   .social-icons a:nth-child(2):hover i {
     color: #ffc838; /* Change the color of the Instagram logo to #ffc838 when hovered */
   }
+
+  .social-icons a:nth-child(5):hover i {
+    color: rgb(0, 0, 0); /* Keep the color of the GitHub logo unchanged when hovered */
+   }
+
+   .social-icons a:nth-child(6):hover i {
+    color: rgb(41, 0, 248); /* Keep the color of the LinkedIn logo unchanged when hovered */
+   }
 
 
 .home-image{
