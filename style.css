@@ -536,16 +536,14 @@ section{
     color: var(--hover-color);
 }
 
-.main-text h2{
-    font-weight: 700;
-    font-size: var(--normal-font);
-    
-    text-transform: uppercase;
-    
-    mix-blend-mode: screen;
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-video {
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;
@@ -553,6 +551,31 @@ video {
   height: 100%;
   object-fit: cover;
 }
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.main-text span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-text h2 {
+  font-weight: 700;
+  font-size: var(--normal-font);
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+}
+
+/* Add your --normal-font and --rainbow-text styles here */
+
 
 .main-text span{
     color: #fdfdfd;
