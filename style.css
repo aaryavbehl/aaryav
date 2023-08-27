@@ -539,6 +539,19 @@ section{
 .main-text h2{
     font-weight: 700;
     font-size: var(--normal-font);
+    
+    text-transform: uppercase;
+    
+    mix-blend-mode: screen;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main-text span{
@@ -547,6 +560,8 @@ section{
     font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    
 }
 
 .section-services{
