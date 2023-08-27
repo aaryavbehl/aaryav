@@ -89,9 +89,6 @@ header{
   content: " 💖 ";
 }
 
-.chunga:hover span:nth-child(2) {
-  margin-left: 30px;
-}
 
 .chunga:hover span {
   color: #00d5ff;
