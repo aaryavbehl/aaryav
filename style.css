@@ -965,7 +965,7 @@ footer a i{
   cursor: pointer;
   position: relative;
   padding: 8px;
-  
+  display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
@@ -1075,9 +1075,7 @@ footer a i{
 }
 
 .center-container {
-    display: flex;
-    justify-content: center;
-    margin-left: 30px;
+    text-align: center;
   }
 
 
