@@ -68,54 +68,36 @@ header{
 
 
 
-.center {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+.chunga {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
 }
 
-.table {
-  width: 790px;
-  height: 150px;
-  background-color: #d4e5ff;
+.chunga span {
+  transition: 0.5s ease-out;
 }
 
-.table .monitor-wrapper {
-  background: #050321;
-  width: 770px;
-  height: 130px;
-  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.30);
+.chunga:hover span:nth-child(1) {
+  margin-right: 5px;
 }
 
-.table .monitor-wrapper .monitor {
-  width: 700px;
-  height: 100px;
-  background-color: #344151;
-  overflow: hidden;
-  white-space: nowrap;
-  box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+.chunga:hover span:nth-child(1):after {
+  content: "'";
 }
 
-.table .monitor-wrapper .monitor p {
-  font-family: 'VT323', monospace;
-  position: relative;
-  display: inline;
-  animation: move 10s infinite linear;
-  color: #EBB55F;
+.chunga:hover span:nth-child(2) {
+  margin-left: 30px;
 }
 
-@keyframes move {
-  from {
-    left: 800px;
-  }
-  to {
-    left: -300px;
-  }
-}
+.chunga:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 
+}
 
 
 .text-shadow {
