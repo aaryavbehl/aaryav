@@ -67,19 +67,6 @@ header{
 
 
 
-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	font-size: 2em;
-	background: #212121;
-	color: #fff;
-	text-transform: uppercase;
-	gap: 30px;
-}
-
 
 
 .text-shadow {
