@@ -1077,6 +1077,7 @@ footer a i{
 .center-container {
     display: flex;
     justify-content: center;
+    margin-left: 30px;
   }
 
 
