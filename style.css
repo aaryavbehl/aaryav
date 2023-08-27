@@ -86,7 +86,7 @@ header{
 }
 
 .chunga:hover span:nth-child(1):after {
-  content: "'";
+  content: " 💖 ";
 }
 
 .chunga:hover span:nth-child(2) {
