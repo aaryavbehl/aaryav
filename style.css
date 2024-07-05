@@ -47,9 +47,14 @@
 }
 
 body{
+    cursor: url('img/cursor.png'), auto;
     font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+.custom-cursor {
+  cursor: url('img/cursor.png'), auto;
 }
 
 header{
@@ -92,6 +97,16 @@ header{
 
 }
 
+a:hover, 
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover,
+select:hover, 
+textarea:hover, 
+label:hover, 
+div:hover {
+    cursor: url('/img/cursor.png'), auto; /* Adjust the path as necessary */
+}
 
 .text-shadow {
 	font-style: italic;
@@ -190,14 +205,16 @@ section{
     padding: 100px 10%;
 }
 
-.home{
-    min-width: 100vh;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    grid-gap: 4em;
+.home {
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 4em;
+  background: url('img/coolpic.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .home-content{
@@ -649,6 +666,9 @@ section{
 
 
 /*portofolio-------------------------------------------------------------------------*/
+
+
+
 .filter-buttons{
     margin: 2rem;
     text-align: center;
@@ -821,9 +841,6 @@ button {
       left: 100%;
     }
   }
-
-
-  
   
 
 /*contact-------------------------------------------------------------------------*/
@@ -861,7 +878,7 @@ button {
 .contact form textarea{
     width: 100%;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: rgba(0, 0, 0, 0.5);;
     margin-bottom: .8rem;
     border: none;
     border-radius: 5px;
